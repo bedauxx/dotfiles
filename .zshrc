@@ -17,6 +17,7 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH=/usr/local/Cellar/git/:$PATH
 export PATH=/Users/mkoguchi/working_copy/flutter_firsttry/flutter/bin:$PATH
+export XDG_CONFIG_HOME=~/.config
 
 
 # 色を使用出来るようにする
@@ -146,6 +147,12 @@ alias sudo='sudo '
 # グローバルエイリアス
 alias -g L='| less'
 alias -g G='| grep'
+
+#vi -> neovim
+alias vi='nvim'
+alias vim='nvim'
+
+
 
 # C で標準出力をクリップボードにコピーする
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
