@@ -18,7 +18,8 @@ if dein#load_state('~/.cache/dein')
  call dein#add('thinca/vim-quickrun') 
  call dein#add('vim-airline/vim-airline')
  call dein#add('vim-airline/vim-airline-themes')
-
+ call dein#add('tomasr/molokai')
+ 
  let g:airline_theme = 'wombat'
  set laststatus=2
  let g:airline#extensions#branch#enabled = 1
@@ -33,7 +34,8 @@ if dein#load_state('~/.cache/dein')
  let g:airline#extensions#default#section_truncate_width = {}
  let g:airline#extensions#whitespace#enabled = 1
 
-
+ let g:molokai_original = 1
+ let g:rehash256 = 1
 
  if !has('nvim')
    call dein#add('roxma/nvim-yarp')
@@ -44,7 +46,7 @@ if dein#load_state('~/.cache/dein')
  call dein#save_state()
 endif
 
-
+colorscheme molokai
 
 
 
