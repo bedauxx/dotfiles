@@ -16,8 +16,10 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH=/usr/local/Cellar/git/:$PATH
-export PATH=/Users/mkoguchi/working_copy/flutter_firsttry/flutter/bin:$PATH
+export PATH=$HOME/working_copy/flutter_firsttry/flutter/bin:$PATH
 export XDG_CONFIG_HOME=~/.config
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 
 # 色を使用出来るようにする
