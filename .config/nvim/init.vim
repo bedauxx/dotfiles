@@ -19,7 +19,9 @@ if dein#load_state('~/.cache/dein')
  call dein#add('vim-airline/vim-airline')
  call dein#add('vim-airline/vim-airline-themes')
  call dein#add('tomasr/molokai')
- 
+ call dein#add('scrooloose/nerdtree')
+
+
  let g:airline_theme = 'wombat'
  set laststatus=2
  let g:airline#extensions#branch#enabled = 1
@@ -48,7 +50,7 @@ endif
 
 colorscheme molokai
 
-
+map <C-n> :NERDTreeToggle<CR>
 
 filetype plugin indent on
 syntax enable

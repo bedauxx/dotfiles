@@ -1,0 +1,38 @@
+{
+	"analytics-uuid": "c197fd7f-d988-48ee-8acc-a6493a7a2e74",
+	"motd": {
+		"minVersion": "3.0.5"
+	},
+	"motd.fetched": 1531113483945,
+	"usage": true,
+	"user": {
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "108552670292600800143",
+		"hd": "crooz.co.jp",
+		"email": "mkoguchi@crooz.co.jp",
+		"email_verified": true,
+		"at_hash": "K4dVUMS1Z_A73Ucyp_mjqg",
+		"exp": 1531117103,
+		"iss": "accounts.google.com",
+		"iat": 1531113503
+	},
+	"tokens": {
+		"expires_at": 1531117883481,
+		"refresh_token": "1/j4qXLN3xhXFh7EO9eD1w47EiT3MZv2r6gmaTtcVUscpapg1ELgF6dGdkbkdR8GOj",
+		"scopes": [
+			"email",
+			"https://www.googleapis.com/auth/cloud-platform",
+			"https://www.googleapis.com/auth/cloudplatformprojects.readonly",
+			"https://www.googleapis.com/auth/firebase",
+			"openid"
+		],
+		"access_token": "ya29.GlvzBZDThmW9KC3g3Vb6qZ_lia5dUzyO_8fwhaYeXT39LqtoelNh3dKKBxKBvKLtU673zMf-crzSsAOm6EY9Zpv4wU9eizCL3AUj-3TKVLxfIlD5Pi38Nbvy8MnJ",
+		"token_type": "Bearer",
+		"expires_in": 3600,
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjQxMjlkYjJlYTE4NjBkMmU4NzFlZTQ4NTA2Mjg3ZmIwNWIwNGNhM2YifQ.eyJhenAiOiI1NjM1ODQzMzU4NjktZmdyaGdtZDQ3YnFuZWtpajVpOGI1cHIwM2hvODQ5ZTYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI1NjM1ODQzMzU4NjktZmdyaGdtZDQ3YnFuZWtpajVpOGI1cHIwM2hvODQ5ZTYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDg1NTI2NzAyOTI2MDA4MDAxNDMiLCJoZCI6ImNyb296LmNvLmpwIiwiZW1haWwiOiJta29ndWNoaUBjcm9vei5jby5qcCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoicEVid05qQU9IOEpTQkN1U2FNeWEyUSIsImV4cCI6MTUzMTExNzg4MywiaXNzIjoiYWNjb3VudHMuZ29vZ2xlLmNvbSIsImlhdCI6MTUzMTExNDI4M30.QVkkAOdyzGeSqEK5WyZys4bBlASkcWhyfScJP3YAZSA7dpsEC1SAPIgltkjWEpIUEQZumloAWuLN1mre23yXAxnUvOk76_mJpvfE0a7Bo9VoySga-8XLA85dhftubDM4_2j67xofhuijdsidKNeXdhk9RDaaCmMYadCbJXGY9KkhXGl7EZCc7MUmLIrxShlr6-I18QvNFOXt0EKv2ARzNuWB38XgZhwE3ZtOXWaSihP1xn2IBv4FOf64M7yao92df5C-kVldMGVnv9zn6y8XsjeD0MAoTTXVffD8RQaxVSR6CMNeMZpI4m2OU8YmoeHvz2HO5G6Ecll1GPzktqVYZA"
+	},
+	"activeProjects": {
+		"/Users/mkoguchi/working_copy/vue-firebase/myproject": "myproject-77d31"
+	}
+}
