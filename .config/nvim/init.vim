@@ -20,6 +20,9 @@ if dein#load_state('~/.cache/dein')
  call dein#add('vim-airline/vim-airline-themes')
  call dein#add('tomasr/molokai')
  call dein#add('scrooloose/nerdtree')
+ call dein#add('bronson/vim-trailing-whitespace')
+ call dein#add('nathanaelkane/vim-indent-guides')
+
 
 
  let g:airline_theme = 'wombat'
