@@ -174,6 +174,8 @@ fi
 
 
 ########################################
+#local ssl use with mkcert (brew install mkcert)
+########################################
 
 function ssl-check() {
     f=~/.localhost_ssl;
