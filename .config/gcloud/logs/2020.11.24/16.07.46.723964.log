@@ -1,0 +1,18 @@
+2020-11-24 16:07:46,725 DEBUG    root            Loaded Command Group: ['gcloud', 'pubsub']
+2020-11-24 16:07:46,728 DEBUG    root            Loaded Command Group: ['gcloud', 'pubsub', 'topics']
+2020-11-24 16:07:46,750 DEBUG    root            Loaded Command Group: ['gcloud', 'pubsub', 'topics', 'publish']
+2020-11-24 16:07:46,756 DEBUG    root            Running [gcloud.pubsub.topics.publish] with arguments: [--message: "all", TOPIC: "launch-lighthouse"]
+2020-11-24 16:07:46,841 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): pubsub.googleapis.com:443
+2020-11-24 16:07:47,445 DEBUG    urllib3.connectionpool https://pubsub.googleapis.com:443 "POST /v1/projects/rich-brace-296603/topics/launch-lighthouse:publish?alt=json HTTP/1.1" 200 None
+2020-11-24 16:07:47,448 INFO     root            Display format: "default"
+2020-11-24 16:07:47,450 INFO     ___FILE_ONLY___ messageIds
+2020-11-24 16:07:47,450 INFO     ___FILE_ONLY___ :
+2020-11-24 16:07:47,450 INFO     ___FILE_ONLY___ 
+
+2020-11-24 16:07:47,451 INFO     ___FILE_ONLY___ -
+2020-11-24 16:07:47,451 INFO     ___FILE_ONLY___  
+2020-11-24 16:07:47,451 INFO     ___FILE_ONLY___ '
+2020-11-24 16:07:47,451 INFO     ___FILE_ONLY___ 1774904174956537
+2020-11-24 16:07:47,451 INFO     ___FILE_ONLY___ '
+2020-11-24 16:07:47,451 INFO     ___FILE_ONLY___ 
+

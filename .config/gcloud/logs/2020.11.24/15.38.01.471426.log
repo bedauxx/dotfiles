@@ -1,0 +1,172 @@
+2020-11-24 15:38:01,473 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2020-11-24 15:38:01,492 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'deploy']
+2020-11-24 15:38:01,507 DEBUG    root            Running [gcloud.functions.deploy] with arguments: [--memory: "2147483648", --runtime: "nodejs10", --timeout: "540", --trigger-topic: "launch-lighthouse", NAME: "launchLighthouse"]
+2020-11-24 15:38:01,964 INFO     root            Using ignore file at [./.gcloudignore].
+2020-11-24 15:38:01,966 DEBUG    root            Skipping file [./.gitignore]
+2020-11-24 15:38:01,967 DEBUG    root            Skipping file [./.gcloudignore]
+2020-11-24 15:38:01,968 DEBUG    root            Skipping file [./.git/config]
+2020-11-24 15:38:01,968 DEBUG    root            Skipping file [./.git/HEAD]
+2020-11-24 15:38:01,968 DEBUG    root            Skipping file [./.git/description]
+2020-11-24 15:38:01,969 DEBUG    root            Skipping file [./.git/index]
+2020-11-24 15:38:01,969 DEBUG    root            Skipping file [./.git/packed-refs]
+2020-11-24 15:38:01,969 DEBUG    root            Skipping file [./.git/objects/pack/pack-e5c1c958e9d37581c762f9666fc8000cfcd4ac17.idx]
+2020-11-24 15:38:01,969 DEBUG    root            Skipping file [./.git/objects/pack/pack-e5c1c958e9d37581c762f9666fc8000cfcd4ac17.pack]
+2020-11-24 15:38:01,970 DEBUG    root            Skipping file [./.git/info/exclude]
+2020-11-24 15:38:01,970 DEBUG    root            Skipping file [./.git/logs/HEAD]
+2020-11-24 15:38:01,970 DEBUG    root            Skipping file [./.git/logs/refs/heads/master]
+2020-11-24 15:38:01,970 DEBUG    root            Skipping file [./.git/logs/refs/remotes/origin/HEAD]
+2020-11-24 15:38:01,971 DEBUG    root            Skipping file [./.git/hooks/commit-msg.sample]
+2020-11-24 15:38:01,971 DEBUG    root            Skipping file [./.git/hooks/pre-rebase.sample]
+2020-11-24 15:38:01,971 DEBUG    root            Skipping file [./.git/hooks/pre-commit.sample]
+2020-11-24 15:38:01,971 DEBUG    root            Skipping file [./.git/hooks/applypatch-msg.sample]
+2020-11-24 15:38:01,971 DEBUG    root            Skipping file [./.git/hooks/fsmonitor-watchman.sample]
+2020-11-24 15:38:01,972 DEBUG    root            Skipping file [./.git/hooks/pre-receive.sample]
+2020-11-24 15:38:01,972 DEBUG    root            Skipping file [./.git/hooks/prepare-commit-msg.sample]
+2020-11-24 15:38:01,972 DEBUG    root            Skipping file [./.git/hooks/post-update.sample]
+2020-11-24 15:38:01,972 DEBUG    root            Skipping file [./.git/hooks/pre-merge-commit.sample]
+2020-11-24 15:38:01,973 DEBUG    root            Skipping file [./.git/hooks/pre-applypatch.sample]
+2020-11-24 15:38:01,973 DEBUG    root            Skipping file [./.git/hooks/pre-push.sample]
+2020-11-24 15:38:01,973 DEBUG    root            Skipping file [./.git/hooks/update.sample]
+2020-11-24 15:38:01,973 DEBUG    root            Skipping file [./.git/refs/heads/master]
+2020-11-24 15:38:01,974 DEBUG    root            Skipping file [./.git/refs/remotes/origin/HEAD]
+2020-11-24 15:38:01,974 INFO     root            Using ignore file at [./.gcloudignore].
+2020-11-24 15:38:01,978 DEBUG    root            Skipping file [./.gitignore]
+2020-11-24 15:38:01,979 DEBUG    root            Skipping file [./.gcloudignore]
+2020-11-24 15:38:01,985 DEBUG    root            Skipping file [.git]
+2020-11-24 15:38:01,985 DEBUG    root            Skipping file [.git/objects]
+2020-11-24 15:38:01,986 DEBUG    root            Skipping file [.git/objects/pack]
+2020-11-24 15:38:01,986 DEBUG    root            Skipping file [.git/objects/info]
+2020-11-24 15:38:01,986 DEBUG    root            Skipping file [.git/info]
+2020-11-24 15:38:01,987 DEBUG    root            Skipping file [.git/logs]
+2020-11-24 15:38:01,987 DEBUG    root            Skipping file [.git/logs/refs]
+2020-11-24 15:38:01,987 DEBUG    root            Skipping file [.git/logs/refs/heads]
+2020-11-24 15:38:01,987 DEBUG    root            Skipping file [.git/logs/refs/remotes]
+2020-11-24 15:38:01,988 DEBUG    root            Skipping file [.git/logs/refs/remotes/origin]
+2020-11-24 15:38:01,988 DEBUG    root            Skipping file [.git/hooks]
+2020-11-24 15:38:01,988 DEBUG    root            Skipping file [.git/refs]
+2020-11-24 15:38:01,989 DEBUG    root            Skipping file [.git/refs/heads]
+2020-11-24 15:38:01,989 DEBUG    root            Skipping file [.git/refs/tags]
+2020-11-24 15:38:01,989 DEBUG    root            Skipping file [.git/refs/remotes]
+2020-11-24 15:38:01,990 DEBUG    root            Skipping file [.git/refs/remotes/origin]
+2020-11-24 15:38:05,291 INFO     ___FILE_ONLY___ Deploying function (may take a while - up to 2 minutes)...
+2020-11-24 15:38:08,542 INFO     ___FILE_ONLY___ 
+For Cloud Build Stackdriver Logs, visit: https://console.cloud.google.com/logs/viewer?project=rich-brace-296603&advancedFilter=resource.type%3Dbuild%0Aresource.labels.build_id%3D086d137e-fe4e-4e53-b4f2-e6ed32baca62%0AlogName%3Dprojects%2Frich-brace-296603%2Flogs%2Fcloudbuild
+
+2020-11-24 15:41:26,199 INFO     root            Display format: "default"
+2020-11-24 15:41:26,204 INFO     ___FILE_ONLY___ availableMemoryMb
+2020-11-24 15:41:26,204 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,204 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,204 INFO     ___FILE_ONLY___ 2048
+2020-11-24 15:41:26,204 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,204 INFO     ___FILE_ONLY___ buildId
+2020-11-24 15:41:26,205 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,205 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,205 INFO     ___FILE_ONLY___ 086d137e-fe4e-4e53-b4f2-e6ed32baca62
+2020-11-24 15:41:26,205 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,205 INFO     ___FILE_ONLY___ entryPoint
+2020-11-24 15:41:26,206 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,206 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,206 INFO     ___FILE_ONLY___ launchLighthouse
+2020-11-24 15:41:26,206 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,206 INFO     ___FILE_ONLY___ eventTrigger
+2020-11-24 15:41:26,206 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,206 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,206 INFO     ___FILE_ONLY___   
+2020-11-24 15:41:26,206 INFO     ___FILE_ONLY___ eventType
+2020-11-24 15:41:26,207 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,207 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,207 INFO     ___FILE_ONLY___ google.pubsub.topic.publish
+2020-11-24 15:41:26,207 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,207 INFO     ___FILE_ONLY___   
+2020-11-24 15:41:26,208 INFO     ___FILE_ONLY___ failurePolicy
+2020-11-24 15:41:26,208 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,208 INFO     ___FILE_ONLY___  {
+2020-11-24 15:41:26,208 INFO     ___FILE_ONLY___ }
+2020-11-24 15:41:26,208 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,209 INFO     ___FILE_ONLY___   
+2020-11-24 15:41:26,210 INFO     ___FILE_ONLY___ resource
+2020-11-24 15:41:26,210 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,210 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,210 INFO     ___FILE_ONLY___ projects/rich-brace-296603/topics/launch-lighthouse
+2020-11-24 15:41:26,210 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,210 INFO     ___FILE_ONLY___   
+2020-11-24 15:41:26,210 INFO     ___FILE_ONLY___ service
+2020-11-24 15:41:26,211 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,211 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,211 INFO     ___FILE_ONLY___ pubsub.googleapis.com
+2020-11-24 15:41:26,211 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,211 INFO     ___FILE_ONLY___ ingressSettings
+2020-11-24 15:41:26,212 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,212 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,212 INFO     ___FILE_ONLY___ ALLOW_ALL
+2020-11-24 15:41:26,212 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,213 INFO     ___FILE_ONLY___ labels
+2020-11-24 15:41:26,213 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,213 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,213 INFO     ___FILE_ONLY___   
+2020-11-24 15:41:26,213 INFO     ___FILE_ONLY___ deployment-tool
+2020-11-24 15:41:26,213 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,214 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,214 INFO     ___FILE_ONLY___ cli-gcloud
+2020-11-24 15:41:26,214 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,215 INFO     ___FILE_ONLY___ name
+2020-11-24 15:41:26,215 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,216 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,216 INFO     ___FILE_ONLY___ projects/rich-brace-296603/locations/us-central1/functions/launchLighthouse
+2020-11-24 15:41:26,216 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,216 INFO     ___FILE_ONLY___ runtime
+2020-11-24 15:41:26,216 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,216 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,216 INFO     ___FILE_ONLY___ nodejs10
+2020-11-24 15:41:26,217 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,217 INFO     ___FILE_ONLY___ serviceAccountEmail
+2020-11-24 15:41:26,217 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,217 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,217 INFO     ___FILE_ONLY___ rich-brace-296603@appspot.gserviceaccount.com
+2020-11-24 15:41:26,217 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,217 INFO     ___FILE_ONLY___ sourceUploadUrl
+2020-11-24 15:41:26,218 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,219 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,221 INFO     ___FILE_ONLY___ https://storage.googleapis.com/gcf-upload-us-central1-2fe5d990-eaf7-4129-8604-e0e6aae62cdb/2b4cf734-813d-46ca-880e-295eb72421fc.zip?GoogleAccessId=service-311981865459@gcf-admin-robot.iam.gserviceaccount.com&Expires=1606201683&Signature=tPQsGnnrnIE6kbqpFpaC2LJUktvVM35hvFcv6IHHX8aRvLtq1s0%2FTOzyJKz5Qsn%2FJhh5iSrt4nsl48MWMWWd9NXP5T6v81mOhvnLtA83sRq%2Fx0jzFLd2MoaKW5EkD8efZE8LARIMspTMt5dLvTB5zMMyQVYPz2yK5Zo3diIdhhSzcSBAbqRdOYecpokxIXtrdnY9Az%2BpQIOYYlCa5uaYWlBUgfrRDbH7EwqSEZMkiz3UvkXzRvJfuwubRlN8IHuiScfo7gevoNlZKhE%2Fk54YE%2FD3L9fdcwoKNZJkR%2BD8DZZntmmxcRzMrWGLUEMnamR0yjpU1QxONIln%2Br0VyANAKA%3D%3D
+2020-11-24 15:41:26,222 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,222 INFO     ___FILE_ONLY___ status
+2020-11-24 15:41:26,222 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,222 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,222 INFO     ___FILE_ONLY___ ACTIVE
+2020-11-24 15:41:26,223 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,223 INFO     ___FILE_ONLY___ timeout
+2020-11-24 15:41:26,223 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,223 INFO     ___FILE_ONLY___  
+2020-11-24 15:41:26,224 INFO     ___FILE_ONLY___ 540s
+2020-11-24 15:41:26,224 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,224 INFO     ___FILE_ONLY___ updateTime
+2020-11-24 15:41:26,224 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,225 INFO     ___FILE_ONLY___  '
+2020-11-24 15:41:26,225 INFO     ___FILE_ONLY___ 2020-11-24T06:41:24.800Z
+2020-11-24 15:41:26,225 INFO     ___FILE_ONLY___ '
+2020-11-24 15:41:26,225 INFO     ___FILE_ONLY___ 
+
+2020-11-24 15:41:26,225 INFO     ___FILE_ONLY___ versionId
+2020-11-24 15:41:26,226 INFO     ___FILE_ONLY___ :
+2020-11-24 15:41:26,226 INFO     ___FILE_ONLY___  '
+2020-11-24 15:41:26,226 INFO     ___FILE_ONLY___ 2
+2020-11-24 15:41:26,226 INFO     ___FILE_ONLY___ '
+2020-11-24 15:41:26,226 INFO     ___FILE_ONLY___ 
+
