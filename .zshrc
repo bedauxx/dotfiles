@@ -270,7 +270,6 @@ esac
 #. `brew --prefix`/etc/profile.d/z.sh
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
-<<<<<<< HEAD
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 export DOCKER_CONTENT_TRUST=1
@@ -279,9 +278,3 @@ export DOCKER_CONTENT_TRUST=1
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-=======
-
-
-
-
->>>>>>> 2b75b16416ca8fc833a5f051a52ef6327402014f
