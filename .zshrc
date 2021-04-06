@@ -24,12 +24,13 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH=/usr/local/Cellar/git/:$PATH
 #export PATH=$HOME/working_copy/flutter_firsttry/flutter/bin:$PATH
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+#export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$HOME/.anyenv/bin:$PATH
 export XDG_CONFIG_HOME=~/.config
 export PATH="$HOME/.rbenv/version:$PATH"
 export PATH=~/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
-
+eval "$(anyenv init -)"
 
 # 色を使用出来るようにする
 autoload -Uz colors
