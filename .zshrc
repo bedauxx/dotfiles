@@ -11,14 +11,23 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PYENV_ROOT/bin:
 eval "$(pyenv init -)"
 
+
+    export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
+
+
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH=/usr/local/Cellar/git/:$PATH
-export PATH=$HOME/working_copy/flutter_firsttry/flutter/bin:$PATH
+#export PATH=$HOME/working_copy/flutter_firsttry/flutter/bin:$PATH
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 export XDG_CONFIG_HOME=~/.config
 export PATH="$HOME/.rbenv/version:$PATH"
+export PATH=~/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
 
@@ -41,6 +50,18 @@ SAVEHIST=1000000
 PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
 %# "
 
+#########################
+
+  if type brew &>/dev/null; then
+    FPATH=/usr/local/share/zsh-completions:$FPATH
+
+
+    autoload -Uz compinit
+    compinit
+  fi
+
+
+#########################
 
 # 単語の区切り文字を指定する
 autoload -Uz select-word-style
@@ -225,7 +246,7 @@ function ssl-check() {
 
 
 
-
+source ~/.config/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 
@@ -249,6 +270,7 @@ esac
 #. `brew --prefix`/etc/profile.d/z.sh
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+<<<<<<< HEAD
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 export DOCKER_CONTENT_TRUST=1
@@ -257,3 +279,9 @@ export DOCKER_CONTENT_TRUST=1
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+=======
+
+
+
+
+>>>>>>> 2b75b16416ca8fc833a5f051a52ef6327402014f
