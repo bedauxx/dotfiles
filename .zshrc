@@ -25,10 +25,11 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export PATH=/usr/local/Cellar/git/:$PATH
 #export PATH=$HOME/working_copy/flutter_firsttry/flutter/bin:$PATH
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=$HOME/.anyenv/bin:$PATH
 export XDG_CONFIG_HOME=~/.config
 export PATH="$HOME/.rbenv/version:$PATH"
 export PATH=~/.rbenv/bin:$PATH
+export PATH=$HOME/.anyenv/bin:$PATH
+export PATH=$HOME/.anyenv/envs/nodenv/versions/*/bin:$PATH
 eval "$(rbenv init -)"
 eval "$(anyenv init -)"
 
@@ -270,8 +271,8 @@ esac
 # z
 #. `brew --prefix`/etc/profile.d/z.sh
 
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+#export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+#export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 export DOCKER_CONTENT_TRUST=1
 
