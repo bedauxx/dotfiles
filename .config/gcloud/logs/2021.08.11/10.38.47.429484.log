@@ -1,0 +1,74 @@
+2021-08-11 10:38:47,431 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2021-08-11 10:38:47,471 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'enable']
+2021-08-11 10:38:47,477 DEBUG    root            Running [gcloud.services.enable] with arguments: [SERVICE:1: "['compute.googleapis.com']"]
+2021-08-11 10:38:47,553 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2021-08-11 10:38:48,601 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/fastapiexam/services/compute.googleapis.com:enable?alt=json HTTP/1.1" 400 None
+2021-08-11 10:38:48,620 DEBUG    root            (gcloud.services.enable) FAILED_PRECONDITION: Billing account for project '478582196910' is not found. Billing must be enabled for activation of service(s) 'compute.googleapis.com,compute.googleapis.com,compute.googleapis.com' to proceed.
+Help Token: Ae-hA1PlhI8BOlIdKnvVGOJ1e-msitbEkj1kLiwikTM8dwbzDCJUtxJSk_hj8FLYBzsBt3AqiZfMPI4Dr9e9CgSU_68lMOaHMDDrEfD1FIXcJvsdhAt-t-c=
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=390001&project=478582196910&services=compute.googleapis.com&services=compute.googleapis.com&services=compute.googleapis.com
+    type: googleapis.com/billing-enabled
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com/billing-enabled
+  metadata:
+    project: '478582196910'
+    services: compute.googleapis.com,compute.googleapis.com,compute.googleapis.com
+  reason: UREQ_PROJECT_BILLING_NOT_FOUND
+Traceback (most recent call last):
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 984, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/surface/services/enable.py", line 92, in Run
+    op = serviceusage.EnableApiCall(project, args.service[0])
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/serviceusage.py", line 75, in EnableApiCall
+    return client.services.Enable(request)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/third_party/apis/serviceusage/v1/serviceusage_v1_client.py", line 263, in Enable
+    return self._RunMethod(
+  File "/Users/masakoguchi/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/masakoguchi/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://serviceusage.googleapis.com/v1/projects/fastapiexam/services/compute.googleapis.com:enable?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Wed, 11 Aug 2021 01:38:48 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "Billing account for project '478582196910' is not found. Billing must be enabled for activation of service(s) 'compute.googleapis.com,compute.googleapis.com,compute.googleapis.com' to proceed.\nHelp Token: Ae-hA1PlhI8BOlIdKnvVGOJ1e-msitbEkj1kLiwikTM8dwbzDCJUtxJSk_hj8FLYBzsBt3AqiZfMPI4Dr9e9CgSU_68lMOaHMDDrEfD1FIXcJvsdhAt-t-c=",
+    "status": "FAILED_PRECONDITION",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+        "violations": [
+          {
+            "type": "googleapis.com/billing-enabled",
+            "subject": "?error_code=390001&project=478582196910&services=compute.googleapis.com&services=compute.googleapis.com&services=compute.googleapis.com"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "UREQ_PROJECT_BILLING_NOT_FOUND",
+        "domain": "serviceusage.googleapis.com/billing-enabled",
+        "metadata": {
+          "project": "478582196910",
+          "services": "compute.googleapis.com,compute.googleapis.com,compute.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+>
+2021-08-11 10:38:48,632 ERROR    root            (gcloud.services.enable) FAILED_PRECONDITION: Billing account for project '478582196910' is not found. Billing must be enabled for activation of service(s) 'compute.googleapis.com,compute.googleapis.com,compute.googleapis.com' to proceed.
+Help Token: Ae-hA1PlhI8BOlIdKnvVGOJ1e-msitbEkj1kLiwikTM8dwbzDCJUtxJSk_hj8FLYBzsBt3AqiZfMPI4Dr9e9CgSU_68lMOaHMDDrEfD1FIXcJvsdhAt-t-c=
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=390001&project=478582196910&services=compute.googleapis.com&services=compute.googleapis.com&services=compute.googleapis.com
+    type: googleapis.com/billing-enabled
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com/billing-enabled
+  metadata:
+    project: '478582196910'
+    services: compute.googleapis.com,compute.googleapis.com,compute.googleapis.com
+  reason: UREQ_PROJECT_BILLING_NOT_FOUND

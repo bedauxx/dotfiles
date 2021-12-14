@@ -6,15 +6,13 @@
 # 環境変数
 export LANG=ja_JP.UTF-8
 
-export PYENV_ROOT="$HOME/.pyenv"
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PYENV_ROOT/bin:
-eval "$(pyenv init -)"
+export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:
 
 
-    export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
-    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+#    export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
+#    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+ #   source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 
 
@@ -26,12 +24,22 @@ export PATH=/usr/local/Cellar/git/:$PATH
 #export PATH=$HOME/working_copy/flutter_firsttry/flutter/bin:$PATH
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
 export XDG_CONFIG_HOME=~/.config
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 export PATH="$HOME/.rbenv/version:$PATH"
 export PATH=~/.rbenv/bin:$PATH
 export PATH=$HOME/.anyenv/bin:$PATH
+export PATH=$HOME/.nodenv/bin:$PATH
 export PATH=$HOME/.anyenv/envs/nodenv/versions/*/bin:$PATH
 eval "$(rbenv init -)"
 eval "$(anyenv init -)"
+eval "$(nodenv init -)"
+
+
+export DOCKER_CONTENT_TRUST=1
 
 # 色を使用出来るようにする
 autoload -Uz colors
@@ -280,3 +288,12 @@ export DOCKER_CONTENT_TRUST=1
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PATH="/usr/local/opt/m4/bin:$PATH"
+
+eval "$(pyenv init -)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/masakoguchi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/masakoguchi/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/masakoguchi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/masakoguchi/google-cloud-sdk/completion.zsh.inc'; fi

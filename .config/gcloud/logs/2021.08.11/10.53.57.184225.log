@@ -1,0 +1,38 @@
+2021-08-11 10:53:57,187 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2021-08-11 10:53:57,193 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2021-08-11 10:53:57,201 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'list']
+2021-08-11 10:53:57,205 DEBUG    root            Running [gcloud.config.configurations.list] with arguments: []
+2021-08-11 10:53:57,207 INFO     root            Display format: "table(
+        name,
+        is_active,
+        properties.core.account,
+        properties.core.project,
+        properties.compute.zone:label=COMPUTE_DEFAULT_ZONE,
+        properties.compute.region:label=COMPUTE_DEFAULT_REGION)
+    "
+2021-08-11 10:53:57,213 INFO     ___FILE_ONLY___ NAME
+2021-08-11 10:53:57,213 INFO     ___FILE_ONLY___      
+2021-08-11 10:53:57,213 INFO     ___FILE_ONLY___ IS_ACTIVE
+2021-08-11 10:53:57,213 INFO     ___FILE_ONLY___   
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___ ACCOUNT
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___             
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___ PROJECT
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___             
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___ COMPUTE_DEFAULT_ZONE
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___   
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___ COMPUTE_DEFAULT_REGION
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___ 
+
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___ default
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___   
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___ True
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___        
+2021-08-11 10:53:57,214 INFO     ___FILE_ONLY___ bedauxx@gmail.com
+2021-08-11 10:53:57,215 INFO     ___FILE_ONLY___   
+2021-08-11 10:53:57,215 INFO     ___FILE_ONLY___ python-web-210707
+2021-08-11 10:53:57,215 INFO     ___FILE_ONLY___   
+2021-08-11 10:53:57,215 INFO     ___FILE_ONLY___ asia-northeast3-a
+2021-08-11 10:53:57,215 INFO     ___FILE_ONLY___      
+2021-08-11 10:53:57,215 INFO     ___FILE_ONLY___ asia-northeast3
+2021-08-11 10:53:57,215 INFO     ___FILE_ONLY___ 
+

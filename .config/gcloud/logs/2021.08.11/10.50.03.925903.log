@@ -1,0 +1,28 @@
+2021-08-11 10:50:03,969 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2021-08-11 10:50:04,029 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2021-08-11 10:50:04,032 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--ssh-key-file: "/Users/masakoguchi/.ssh/id_rsa", [USER@]INSTANCE: "cloud-user@myinstance-1"]
+2021-08-11 10:50:04,301 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2021-08-11 10:50:04,785 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:50:04,788 DEBUG    root            (gcloud.compute.ssh) Could not fetch resource:
+ - The resource 'projects/python-web-210707/zones/asia-northeast3-a/instances/myinstance-1' was not found
+Traceback (most recent call last):
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 984, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/surface/compute/ssh.py", line 262, in Run
+    instance = ssh_helper.GetInstance(client, instance_ref)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/command_lib/compute/ssh_utils.py", line 501, in GetInstance
+    return client.MakeRequests([request])[0]
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 106, in MakeRequests
+    utils.RaiseToolException(
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 129, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 138, in RaiseException
+    raise exception(
+googlecloudsdk.calliope.exceptions.ToolException: Could not fetch resource:
+ - The resource 'projects/python-web-210707/zones/asia-northeast3-a/instances/myinstance-1' was not found
+
+2021-08-11 10:50:04,792 ERROR    root            (gcloud.compute.ssh) Could not fetch resource:
+ - The resource 'projects/python-web-210707/zones/asia-northeast3-a/instances/myinstance-1' was not found
+

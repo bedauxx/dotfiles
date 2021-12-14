@@ -1,0 +1,6 @@
+2021-08-11 10:40:40,775 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2021-08-11 10:40:40,781 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'enable']
+2021-08-11 10:40:40,783 DEBUG    root            Running [gcloud.services.enable] with arguments: [SERVICE:1: "['compute.googleapis.com']"]
+2021-08-11 10:40:40,818 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2021-08-11 10:40:41,841 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/python-web-210707/services/compute.googleapis.com:enable?alt=json HTTP/1.1" 200 None
+2021-08-11 10:40:41,845 INFO     root            Display format: "none"

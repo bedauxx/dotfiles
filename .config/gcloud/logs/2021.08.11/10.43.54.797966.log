@@ -1,0 +1,29 @@
+2021-08-11 10:43:54,896 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2021-08-11 10:43:54,922 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2021-08-11 10:43:55,154 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'create']
+2021-08-11 10:43:55,432 DEBUG    root            Running [gcloud.compute.instances.create] with arguments: [--boot-disk-size: "10737418240", --boot-disk-type: "pd-ssd", --image-family: "ubuntu-1904", --image-project: "ubuntu-os-cloud", --machine-type: "n1-standard-2", --zone: "asia-northeast1-a", INSTANCE_NAMES:1: "['myinstance-1']"]
+2021-08-11 10:43:55,775 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2021-08-11 10:43:56,276 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:43:56,707 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:43:57,583 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:43:57,588 DEBUG    root            (gcloud.compute.instances.create) Could not fetch resource:
+ - The resource 'projects/ubuntu-os-cloud/global/images/family/ubuntu-1904' was not found
+Traceback (most recent call last):
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 984, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/surface/compute/instances/create.py", line 515, in Run
+    return compute_client.MakeRequests(requests)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 106, in MakeRequests
+    utils.RaiseToolException(
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 129, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+  File "/Users/masakoguchi/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 138, in RaiseException
+    raise exception(
+googlecloudsdk.calliope.exceptions.ToolException: Could not fetch resource:
+ - The resource 'projects/ubuntu-os-cloud/global/images/family/ubuntu-1904' was not found
+
+2021-08-11 10:43:57,597 ERROR    root            (gcloud.compute.instances.create) Could not fetch resource:
+ - The resource 'projects/ubuntu-os-cloud/global/images/family/ubuntu-1904' was not found
+

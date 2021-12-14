@@ -1,4 +1,8 @@
 [core]
-account = webresponsespeed@gmail.com
-project = rich-brace-296603
+account = bedauxx@gmail.com
+project = python-web-210707
+
+[compute]
+zone = asia-northeast3-a
+region = asia-northeast3
 

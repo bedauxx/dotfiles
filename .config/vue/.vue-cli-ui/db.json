@@ -1,0 +1,29 @@
+{
+  "projects": [
+    {
+      "id": "H2yOmgc9ws",
+      "path": "/Users/masakoguchi/tmp/vue/test",
+      "favorite": 0,
+      "type": "vue",
+      "name": "test",
+      "openDate": 1636354352243,
+      "widgets": [
+        {
+          "id": "pvzUrahR7k",
+          "definitionId": "org.vue.widgets.kill-port",
+          "x": 3,
+          "y": 0,
+          "width": 2,
+          "height": 1,
+          "configured": true,
+          "config": null
+        }
+      ]
+    }
+  ],
+  "foldersFavorite": [],
+  "tasks": [],
+  "config": {
+    "lastOpenProject": "H2yOmgc9ws"
+  }
+}

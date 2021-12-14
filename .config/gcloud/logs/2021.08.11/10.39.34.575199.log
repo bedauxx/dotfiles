@@ -1,0 +1,106 @@
+2021-08-11 10:39:34,592 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2021-08-11 10:39:34,610 DEBUG    root            Running [gcloud.init] with arguments: []
+2021-08-11 10:39:34,611 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2021-08-11 10:39:34,619 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2021-08-11 10:39:34,624 INFO     ___FILE_ONLY___ core:
+  account: bedauxx@gmail.com
+  disable_usage_reporting: 'True'
+  project: fastapiexam
+
+2021-08-11 10:39:34,624 INFO     ___FILE_ONLY___ 
+
+2021-08-11 10:39:42,026 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2021-08-11 10:39:42,027 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2021-08-11 10:39:42,028 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2021-08-11 10:39:42,028 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2021-08-11 10:39:42,030 INFO     ___FILE_ONLY___ Checking network connection...
+2021-08-11 10:39:43,563 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): accounts.google.com:443
+2021-08-11 10:39:43,714 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET / HTTP/1.1" 302 338
+2021-08-11 10:39:43,812 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F HTTP/1.1" 200 None
+2021-08-11 10:39:43,861 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2021-08-11 10:39:44,577 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1beta1/projects HTTP/1.1" 401 None
+2021-08-11 10:39:44,581 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.googleapis.com:443
+2021-08-11 10:39:44,691 DEBUG    urllib3.connectionpool https://www.googleapis.com:443 "GET /auth/cloud-platform HTTP/1.1" 200 14
+2021-08-11 10:39:44,701 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2021-08-11 10:39:44,881 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 159482
+2021-08-11 10:39:45,086 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2021-08-11 10:39:45,086 INFO     ___FILE_ONLY___ Network diagnostic passed (1/1 checks passed).
+
+
+2021-08-11 10:39:48,962 INFO     ___FILE_ONLY___ You are logged in as: [bedauxx@gmail.com].
+
+
+2021-08-11 10:39:49,056 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2021-08-11 10:39:49,807 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=201 HTTP/1.1" 200 None
+2021-08-11 10:39:55,977 INFO     ___FILE_ONLY___ Your current project has been set to: [python-web-210707].
+
+
+2021-08-11 10:39:56,024 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2021-08-11 10:39:56,032 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project_info']
+2021-08-11 10:39:56,042 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project-info', 'describe']
+2021-08-11 10:39:56,043 INFO     root            Executing: [gcloud compute project-info describe --quiet]
+2021-08-11 10:39:56,048 DEBUG    root            Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --quiet: "True", --verbosity: "none"]
+2021-08-11 10:39:56,322 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2021-08-11 10:39:56,828 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:39:56,846 INFO     root            Display disabled.
+2021-08-11 10:40:04,043 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'zones']
+2021-08-11 10:40:04,047 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'zones', 'list']
+2021-08-11 10:40:04,048 INFO     root            Executing: [gcloud compute zones list]
+2021-08-11 10:40:04,050 DEBUG    root            Running [gcloud.compute.zones.list] with arguments: [--no-user-output-enabled: "false", --verbosity: "none"]
+2021-08-11 10:40:04,070 INFO     root            Display disabled.
+2021-08-11 10:40:04,074 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2021-08-11 10:40:04,629 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:40:28,558 INFO     ___FILE_ONLY___ Your project default Compute Engine zone has been set to [asia-northeast3-a].
+You can change it by running [gcloud config set compute/zone NAME].
+
+
+2021-08-11 10:40:28,570 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'regions']
+2021-08-11 10:40:28,589 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'regions', 'describe']
+2021-08-11 10:40:28,591 INFO     root            Executing: [gcloud compute regions describe https://www.googleapis.com/compute/v1/projects/python-web-210707/regions/asia-northeast3]
+2021-08-11 10:40:28,596 DEBUG    root            Running [gcloud.compute.regions.describe] with arguments: [--no-user-output-enabled: "false", --verbosity: "none", NAME: "https://www.googleapis.com/compute/v1/projects/python-web-210707/regions/asia-northeast3"]
+2021-08-11 10:40:28,620 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2021-08-11 10:40:29,278 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:40:29,289 INFO     root            Display disabled.
+2021-08-11 10:40:29,299 INFO     ___FILE_ONLY___ Your project default Compute Engine region has been set to [asia-northeast3].
+You can change it by running [gcloud config set compute/region NAME].
+
+
+2021-08-11 10:40:29,299 DEBUG    root            Not configuring default .boto file. File already exists at [/Users/masakoguchi/.boto].
+2021-08-11 10:40:29,299 INFO     ___FILE_ONLY___ Your Google Cloud SDK is configured and ready to use!
+
+
+2021-08-11 10:40:29,304 INFO     ___FILE_ONLY___ * Commands that require authentication will use bedauxx@gmail.com by default
+
+2021-08-11 10:40:29,304 INFO     ___FILE_ONLY___ * Commands will reference project `python-web-210707` by default
+
+2021-08-11 10:40:29,304 INFO     ___FILE_ONLY___ * Compute Engine commands will use region `asia-northeast3` by default
+
+2021-08-11 10:40:29,304 INFO     ___FILE_ONLY___ * Compute Engine commands will use zone `asia-northeast3-a` by default
+
+
+2021-08-11 10:40:29,304 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2021-08-11 10:40:29,305 INFO     ___FILE_ONLY___ This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2021-08-11 10:40:29,305 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2021-08-11 10:40:29,305 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2021-08-11 10:40:29,305 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2021-08-11 10:40:29,305 INFO     ___FILE_ONLY___ * Run `gcloud topic --help` to learn about advanced features of the SDK like arg files and output formatting
+
+2021-08-11 10:40:29,307 INFO     root            Display format: "default"

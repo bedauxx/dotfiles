@@ -1,0 +1,55 @@
+2021-08-11 10:54:50,293 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2021-08-11 10:54:50,335 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'config_ssh']
+2021-08-11 10:54:50,337 DEBUG    root            Running [gcloud.compute.config-ssh] with arguments: []
+2021-08-11 10:54:50,607 WARNING  root            The private SSH key file for gcloud does not exist.
+2021-08-11 10:54:50,607 WARNING  root            The public SSH key file for gcloud does not exist.
+2021-08-11 10:54:50,608 WARNING  root            You do not have an SSH key for gcloud.
+2021-08-11 10:54:50,608 WARNING  root            SSH keygen will be executed to generate a key.
+2021-08-11 10:54:50,608 DEBUG    root            Running command [/usr/bin/ssh-keygen -t rsa -f /Users/masakoguchi/.ssh/google_compute_engine].
+2021-08-11 10:54:50,608 DEBUG    root            Executing command: ['/usr/bin/ssh-keygen', '-t', 'rsa', '-f', '/Users/masakoguchi/.ssh/google_compute_engine']
+2021-08-11 10:54:54,514 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2021-08-11 10:54:56,310 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:54:56,316 DEBUG    root            Current SSH keys in project: []
+2021-08-11 10:54:56,317 INFO     ___FILE_ONLY___ Updating project ssh metadata...
+2021-08-11 10:54:57,244 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:54:57,250 DEBUG    root            Operations to inspect: [<Operation
+ id: 3986175776452940575
+ insertTime: '2021-08-10T18:54:56.846-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1628646896348-5c93ee7b8adea-926542d6-a0906729'
+ operationType: 'compute.projects.setCommonInstanceMetadata'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/python-web-210707/global/operations/operation-1628646896348-5c93ee7b8adea-926542d6-a0906729'
+ startTime: '2021-08-10T18:54:56.850-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 230368410449
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/python-web-210707'
+ user: 'bedauxx@gmail.com'
+ warnings: []>]
+2021-08-11 10:55:06,959 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:55:06,961 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2021-08-10T18:55:06.649-07:00'
+ id: 3986175776452940575
+ insertTime: '2021-08-10T18:54:56.846-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1628646896348-5c93ee7b8adea-926542d6-a0906729'
+ operationType: 'compute.projects.setCommonInstanceMetadata'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/python-web-210707/global/operations/operation-1628646896348-5c93ee7b8adea-926542d6-a0906729'
+ startTime: '2021-08-10T18:54:56.850-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 230368410449
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/python-web-210707'
+ user: 'bedauxx@gmail.com'
+ warnings: []>]
+2021-08-11 10:55:06,961 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/python-web-210707].
+
+2021-08-11 10:55:07,387 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:55:07,976 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-08-11 10:55:08,014 INFO     ___FILE_ONLY___ You should now be able to use ssh/scp with your instances.
+For example, try running:
+
+  $ ssh myinstance-1.asia-northeast1-a.python-web-210707
+
+
+2021-08-11 10:55:08,016 INFO     root            Display format: "default"
