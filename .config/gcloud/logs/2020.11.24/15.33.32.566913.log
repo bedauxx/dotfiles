@@ -1,6 +1,0 @@
-2020-11-24 15:33:32,568 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
-2020-11-24 15:33:32,575 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
-2020-11-24 15:33:32,578 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "rich-brace-296603"]
-2020-11-24 15:33:32,579 INFO     ___FILE_ONLY___ Updated property [core/project].
-
-2020-11-24 15:33:33,340 INFO     root            Display format: "default"
