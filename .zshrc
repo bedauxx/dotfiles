@@ -196,7 +196,8 @@ alias nrd='npm run dev'
 alias ni='npm install'
 alias nv='node --version'
 
-
+#gipアドレス表示
+alias gip='curl globalip.me'
 
 # C で標準出力をクリップボードにコピーする
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
