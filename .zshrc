@@ -6,8 +6,7 @@
 # 環境変数
 export LANG=ja_JP.UTF-8
 
-export PYENV_ROOT="$HOME/.pyenv"
-
+export PYENV_ROOT="$HOME/.anyenv/envs/pyenv"
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PYENV_ROOT/bin:
 eval "$(pyenv init -)"
 
@@ -179,6 +178,23 @@ alias -g G='| grep'
 #vi -> neovim
 alias vi='nvim'
 alias vim='nvim'
+
+
+#docker alias
+alias d='docker'
+alias dc='docker-compose'
+alias dcnt='docker container'
+alias dcur='docker container ls -f status=running -l -q'
+alias dexec='docker container exec -it $(dcur)'
+alias dimg='docker image'
+alias drun='docker container run —rm -d'
+alias drunit='docker container run —rm -it'
+alias dstop='docker container stop $(dcur)'
+
+#alias node
+alias nrd='npm run dev'
+alias ni='npm install'
+alias nv='node --version'
 
 
 
