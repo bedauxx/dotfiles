@@ -1,0 +1,17 @@
+Errno::ENOENT: No such file or directory @ rb_sysopen - /Users/masakoguchi/Documents/workspace/localvenus/zenkokutsuhan/volumes/venus_3.0/project/zenkokutsuhan/master/resource/site/admin/img
+/usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/file_system_storage.rb:23:in `read'
+/usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/file_system_storage.rb:23:in `read'
+/usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/file_system_storage.rb:23:in `read'
+/usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/handler.rb:152:in `block in in_memory_storage'
+/usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/handler.rb:152:in `map'
+/usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/handler.rb:152:in `in_memory_storage'
+/usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/handler.rb:51:in `on_initialize'
+/usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/server.rb:110:in `handle_message'
+/usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/server.rb:59:in `block (2 levels) in start_json_rpc_thread'
+/usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/server.rb:56:in `loop'
+/usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/server.rb:56:in `block in start_json_rpc_thread'
+Content-Length: 1677
+
+{"id":0,"error":{"code":-32603,"message":"Errno::ENOENT: No such file or directory @ rb_sysopen - /Users/masakoguchi/Documents/workspace/localvenus/zenkokutsuhan/volumes/venus_3.0/project/zenkokutsuhan/master/resource/site/admin/img\n  /usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/file_system_storage.rb:23:in `read'\n  /usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/file_system_storage.rb:23:in `read'\n  /usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/file_system_storage.rb:23:in `read'\n  /usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/handler.rb:152:in `block in in_memory_storage'\n  /usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/handler.rb:152:in `map'\n  /usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/handler.rb:152:in `in_memory_storage'\n  /usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/handler.rb:51:in `on_initialize'\n  /usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/server.rb:110:in `handle_message'\n  /usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/server.rb:59:in `block (2 levels) in start_json_rpc_thread'\n  /usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/server.rb:56:in `loop'\n  /usr/local/Cellar/shopify-cli/2.18.1/gems/theme-check-1.10.2/lib/theme_check/language_server/server.rb:56:in `block in start_json_rpc_thread'\n"},"jsonrpc":"2.0"}Content-Length: 38
+
+{"id":1,"result":null,"jsonrpc":"2.0"}

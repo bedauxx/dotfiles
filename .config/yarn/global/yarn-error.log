@@ -1,0 +1,44 @@
+Arguments: 
+  /Users/masakoguchi/.anyenv/envs/nodenv/versions/16.13.1/bin/node /Users/masakoguchi/.anyenv/envs/nodenv/versions/16.13.1/bin/yarn create next-app --typescript
+
+PATH: 
+  /Users/masakoguchi/.anyenv/envs/nodenv/versions/16.13.1/bin:/Users/masakoguchi/.anyenv/envs/nodenv/libexec:/Users/masakoguchi/.anyenv/envs/nodenv/plugins/nodenv-vars/bin:/Users/masakoguchi/.anyenv/envs/nodenv/plugins/node-build/bin:/Users/masakoguchi/.anyenv/envs/pyenv/shims:/Users/masakoguchi/.anyenv/envs/pyenv/bin:/Users/masakoguchi/.anyenv/envs/nodenv/shims:/Users/masakoguchi/.anyenv/envs/nodenv/bin:/Users/masakoguchi/.rbenv/shims:/Users/masakoguchi/.anyenv/envs/nodenv/versions/*/bin:/Users/masakoguchi/.anyenv/bin:/Users/masakoguchi/.rbenv/bin:/Users/masakoguchi/.rbenv/version:/usr/local/Cellar/git/:/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/masakoguchi/.anyenv/envs/pyenv/bin::/usr/local/opt/go/libexec/bin:/Users/masakoguchi/go/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/masakoguchi/.config/yarn/global/package.json: Unexpected token < in JSON at position 22
+      at JSON.parse (<anonymous>)
+      at /Users/masakoguchi/.anyenv/envs/nodenv/versions/16.13.1/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/masakoguchi/.anyenv/envs/nodenv/versions/16.13.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/masakoguchi/.anyenv/envs/nodenv/versions/16.13.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "dependencies": {
+  <<<<<<< HEAD
+      "@expo/ngrok": "^2.4.3",
+      "@gridsome/cli": "^0.3.3",
+      "create-frourio-app": "^0.21.5",
+      "create-nuxt-app": "^2.15.0",
+      "prisma": "^1.34.10",
+      "typescript": "^3.9.3"
+  =======
+      "create-frourio-app": "^0.22.1"
+  >>>>>>> 2b75b16416ca8fc833a5f051a52ef6327402014f
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

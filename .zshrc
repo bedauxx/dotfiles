@@ -8,7 +8,13 @@ export LANG=ja_JP.UTF-8
 
 export PYENV_ROOT="$HOME/.anyenv/envs/pyenv"
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PYENV_ROOT/bin:
+export PATH=~/.rbenv/bin:$PATH
+export PATH="$HOME/.rbenv/version:$PATH"
+export PATH=$HOME/.anyenv/bin:$PATH
+export PATH=$HOME/.anyenv/envs/nodenv/versions/*/bin:$PATH
 eval "$(pyenv init -)"
+eval "$(rbenv init -)"
+eval "$(anyenv init -)"
 
 
     export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
@@ -25,12 +31,6 @@ export PATH=/usr/local/Cellar/git/:$PATH
 #export PATH=$HOME/working_copy/flutter_firsttry/flutter/bin:$PATH
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
 export XDG_CONFIG_HOME=~/.config
-export PATH="$HOME/.rbenv/version:$PATH"
-export PATH=~/.rbenv/bin:$PATH
-export PATH=$HOME/.anyenv/bin:$PATH
-export PATH=$HOME/.anyenv/envs/nodenv/versions/*/bin:$PATH
-eval "$(rbenv init -)"
-eval "$(anyenv init -)"
 
 # 色を使用出来るようにする
 autoload -Uz colors
@@ -297,3 +297,10 @@ export DOCKER_CONTENT_TRUST=1
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/masakoguchi/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
